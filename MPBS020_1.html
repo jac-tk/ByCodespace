@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>楽楽</title>
+</head>
+<body>
+    <div class="header">
+        <img src="" alt="" width="100" height="50">
+        <span class="MAP">＊＊＊タイトル＊＊＊</span>
+        <div>
+            <span>YY/MM/DD</span>
+            <span>　</span>
+            <span>HH:MM:SS</span>
+        </div>
+    </div>
+    <form action="">
+        <table>
+            <!-- <th class="subtitle">
+                <td>項目名</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </th> -->
+            <tr>
+                <td class="subtitle">集配票ＮＯ．</td>
+                <td><input type="tel"></td>
+                <td class="subtitle">（代表集配票ＮＯ．</td>
+                <td><input type="tel">）</td>
+            </tr>
+            <tr></tr>
+            <tr class="col_y">
+                <td class="subtitle">稼働年月日</td>
+                <td><input type="date" name="" id=""></td>
+                <td class="subtitle">稼働店所</td>
+                <td><input type="tel"></td>
+                <td>山形支店</td>
+            </tr>
+            <tr class="col_y">
+                <td class="subtitle">作業区分</td>
+                <td><input type="tel"></td>
+                <td></td>
+            </tr>
+        </table>
+        <input type="submit">
+    </form>
+</body>
+<style>
+/* 1ann */
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+/* 2ann */
+    /* .header{
+        img{
+            float: left;
+        }
+        .MAP{
+            margin: 0 auto;
+        }
+        div{
+            float: right;
+        }
+    } */
+/* 3ann */
+    /* .header{
+        text-align: center;
+        img{
+            float: left;
+        }
+        div{
+            float: right;
+        }
+    } */
+    /* GPT */
+    /* .container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .container div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  } */
+    table{
+        border-spacing: 1px;
+        background:gray;
+        *{
+            /* border: 0.5px grey solid; */
+            background: white;
+        }
+        .subtitle > td, td.subtitle{
+            background: linear-gradient(lightblue,lightskyblue);
+            font-weight: bold;
+            color:navy;
+        }
+        .col_y{
+            color:yellow;
+        }
+    }
+    button.rakbtn{
+        background: linear-gradient(lightblue,lightskyblue);
+        font-weight: bolder;
+        color: cadetblue;
+        color: steelblue;
+        color: lightsteelblue;
+        color: dodgerblue;
+        color: teal;
+        color:white;
+        border:gray;
+    }
+</style>
+</html>
