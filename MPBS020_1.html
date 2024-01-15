@@ -55,46 +55,15 @@
     </form>
 </body>
 <style>
-/* 1ann */
     .header{
         display: flex;
-        justify-content: space-between;
+        :first-child,:last-child{
+            flex-grow: 1;
+        }
+        :last-child{
+            text-align: right;
+        }
     }
-/* 2ann */
-    /* .header{
-        img{
-            float: left;
-        }
-        .MAP{
-            margin: 0 auto;
-        }
-        div{
-            float: right;
-        }
-    } */
-/* 3ann */
-    /* .header{
-        text-align: center;
-        img{
-            float: left;
-        }
-        div{
-            float: right;
-        }
-    } */
-    /* GPT */
-    /* .container {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  .container div {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  } */
     table{
         border-spacing: 1px;
         background:gray;
@@ -106,6 +75,7 @@
             background: linear-gradient(lightblue,lightskyblue);
             font-weight: bold;
             color:navy;
+            text-shadow:none;
         }
         .col_y{
             color:yellow;
