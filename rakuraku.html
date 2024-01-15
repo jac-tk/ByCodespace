@@ -17,7 +17,7 @@
     </div>
     <form action="">
         <table>
-            <tr class="subtitle">
+            <!-- <th class="subtitle">
                 <td>項目名</td>
                 <td></td>
                 <td></td>
@@ -30,24 +30,16 @@
                 <td></td>
                 <td></td>
                 <td></td>
-            </tr>
+            </th> -->
             <tr>
-                <td class="subtitle">名称</td>
-                <td>たろう</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td class="subtitle">集配票ＮＯ．</td>
+                <td><input type="tel"></td>
+                <td>（代表集配票ＮＯ．</td>
+                <td><input type="tel"></td>
             </tr>
         </table>
+        <input type="submit">
     </form>
-    <button class="rakbtn">a</button>
 </body>
 <style>
 /* 1ann */
@@ -97,15 +89,10 @@
             /* border: 0.5px grey solid; */
             background: white;
         }
-        .subtitle{
+        .subtitle > td, td.subtitle{
             background: linear-gradient(lightblue,lightskyblue);
             font-weight: bold;
             color:navy;
-            td{
-                background: linear-gradient(lightblue,lightskyblue);
-                font-weight: bolder;
-                color:navy;
-            }
         }
     }
     button.rakbtn{
