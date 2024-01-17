@@ -11,4 +11,7 @@
         text-align: right;
     }
 }
+.error{
+    display: none;
+}
 /* </style> */
