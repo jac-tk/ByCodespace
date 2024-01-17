@@ -115,9 +115,9 @@
     <p style="display: flex;">
 
         <button onclick="resetStyle();document.querySelectorAll('.error').forEach( e => e.style.display = 'unset')">error</button>
-        <button onclick="resetStyle();document.querySelectorAll('.phase1').forEach( e => e.style.backgroundColor = 'rbga(0,0,0,0.2)')">phase1</button>
-        <button onclick="resetStyle();document.querySelectorAll('input:not(.phase1)').forEach( e => e.readOnly=true)">phase1</button>
-        <button onclick="resetStyle();document.querySelectorAll('input').forEach( e => e.readOnly=true)">phaze3</button>
+        <button onclick="resetStyle();document.querySelectorAll('tr.phaze1 input').forEach( e => e.readOnly=true )">phase1</button>
+        <button onclick="resetStyle();document.querySelectorAll('tr:not(.phase1) input').forEach( e => e.readOnly=true)">phase2</button>
+        <button onclick="resetStyle();document.querySelectorAll('tr input').forEach( e => e.readOnly=true)">phaze3</button>
         <script>
             function resetStyle(){
                 document.querySelectorAll('input').forEach(e=> e.readOnly=false);
