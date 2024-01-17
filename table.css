@@ -24,8 +24,8 @@
         }
         td{
             white-space: nowrap;
-            max-width: 70em;
-            text-overflow: ellipsis;
+            max-width: 70em;            /* 念のため */
+            text-overflow: ellipsis;    /* 念のため */
         }
         .subtitle > td, td.subtitle{
             background: linear-gradient(lightblue,lightskyblue);
