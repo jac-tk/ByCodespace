@@ -17,7 +17,7 @@
     </div>
     <form style="width: 100%;" action="">
         <table>
-            <tr class="color_y">
+            <tr class="color_y phase1">
                 <td class="subtitle">集配票ＮＯ．</td>
                 <td><input type="tel"></td>
                 <td class="subtitle">（代表集配票ＮＯ．</td>
@@ -111,6 +111,20 @@
         </table>
         <input type="submit" style="float: right;">
     </form>
+    <p>　</p>
+    <p style="display: flex;">
+
+        <button onclick="resetStyle();document.querySelectorAll('.error').forEach( e => e.style.display = 'unset')">error</button>
+        <button onclick="resetStyle();document.querySelectorAll('.phase1').forEach( e => e.style.backgroundColor = 'rbga(0,0,0,0.2)')">phase1</button>
+        <button onclick="resetStyle();document.querySelectorAll('input:not(.phase1)').forEach( e => e.readOnly=true)">phase1</button>
+        <button onclick="resetStyle();document.querySelectorAll('input').forEach( e => e.readOnly=true)">phaze3</button>
+        <script>
+            function resetStyle(){
+                document.querySelectorAll('input').forEach(e=> e.readOnly=false);
+                document.querySelectorAll('error').forEach(e=> e.style.display="none");
+            }
+        </script>
+    </p>
 </body>
 <link rel="stylesheet" href="head.css">
 <link rel="stylesheet" href="table.css">
