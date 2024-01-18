@@ -121,7 +121,7 @@
         <button onclick="resetStyle();document.querySelectorAll('.error').forEach( e => e.style.display = 'unset')">error</button>
         <button onclick="resetStyle();document.querySelectorAll('tr:not(.phase1) input').forEach( e => e.readOnly=true)">phase1</button>
         <button onclick="resetStyle();document.querySelectorAll('tr.phase1 input').forEach( e => e.readOnly=true )">phase2</button>
-        <button onclick="resetStyle();document.querySelectorAll('tr input').forEach( e => e.readOnly=true);sleep(1000);confirm('これで問題ありませんか？')">phaze3</button>
+        <button onclick="resetStyle();document.querySelectorAll('tr input').forEach( e => e.readOnly=true);setTimeout(() => confirm('これで問題ありませんか？'), 1000);">phaze3</button>
         <script>
             function resetStyle(){
                 document.querySelectorAll('input').forEach(e=> e.readOnly=false);
