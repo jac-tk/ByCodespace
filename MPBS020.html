@@ -22,8 +22,8 @@
                 <td><input type="tel"></td>
                 <td class="subtitle">（代表集配票ＮＯ．</td>
                 <td>
-                    <input type="tel">）
-                    <p class="error">＊＊個別エラー＊＊ここがエラーです＊＊＊＊</p>
+                    <input type="tel">）<br>
+                    <span class="error">＊＊個別エラー＊＊ここがエラーです＊＊＊＊</span>
                 </td>
             </tr>
             <tr></tr>
@@ -125,7 +125,7 @@
         <script>
             function resetStyle(){
                 document.querySelectorAll('input').forEach(e=> e.readOnly=false);
-                document.querySelectorAll('error').forEach(e=> e.style.display="none");
+                document.querySelectorAll('.error').forEach(e=> e.style.display="none");
             }
         </script>
     </p>
