@@ -1,6 +1,7 @@
 /* <style> */
     div.selection{
         display: flex;
+        flex-wrap: wrap;
         > div{
             display: flex;
             flex-direction: column;
