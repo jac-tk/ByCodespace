@@ -23,5 +23,12 @@
         "sizes": "320x320",
         "purpose": "any",
         "form_factor": "wide"
-    }]
+        },
+        {
+            "src": "tst32.png",
+            "sizes": "320x320",
+            "purpose": "any",
+            "form_factor": "narrow"
+        }
+    ]
 }
