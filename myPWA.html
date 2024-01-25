@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWAapp</title>
+</head>
+<body>
+    <div class="step1">
+        input name<input type="text">
+        <button onclick="generateEnv(this.previousElementSibling)">OK</button>
+    </div>
+</body>
+<script>
+    function generateEnv(elem){
+        if(!elem.value)return alert("未入力！");
+        const startUrl = window.location.href + "?" + elem.value,
+                manifest = {
+                    "name": "myPWAapplication",
+                    "short_name": "myPWA",
+                    "theme_color": "blue",
+                    "background_color": "gray",
+                    "display": "standalone",
+                    "start_url": startUrl,
+                    "icons": [
+                        {
+                        "src": "tst.png",
+                        "sizes": "100x100",
+                        "type": "アイコンの種類"
+                        }],
+                }
+        const stringManifest = JSON.stringify(manifest);
+        const blob = new Blob([stringManifest], {type: 'application/json'});
+        const manifestURL = URL.createObjectURL(blob);
+        document.querySelector('#mymanifest').setAttribute('href', manifestURL);
+    }
+</script>
+<link rel="manifest" id="mymanifest" />
+</html>
