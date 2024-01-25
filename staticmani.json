@@ -8,12 +8,11 @@
     "icons": [
         {
         "src": "tst.png",
-        "sizes": "100x100",
-        "type": "アイコンの種類"
+        "sizes": "150x150"
         }],  
     "screenshots": [
         {
         "src": "tst.png",
-        "sizes": "100x100"
+        "sizes": "150x150"
     }]
 }
