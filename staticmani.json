@@ -1,0 +1,14 @@
+{
+    "name": "myPWAapplication",
+    "short_name": "myPWA",
+    "theme_color": "blue",
+    "background_color": "gray",
+    "display": "standalone",
+    "start_url": "/myPWA",
+    "icons": [
+        {
+        "src": "tst.png",
+        "sizes": "100x100",
+        "type": "アイコンの種類"
+        }]
+}
