@@ -10,5 +10,10 @@
         "src": "tst.png",
         "sizes": "100x100",
         "type": "アイコンの種類"
-        }]
+        }],  
+    "screenshots": [
+        {
+        "src": "tst.png",
+        "sizes": "100x100"
+    }]
 }

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PWAapp</title>
 
-    <link rel="manifest" id="mymanifest" />
-    <!-- <link rel="manifest" href="staticmani.json" /> -->
+    <!-- <link rel="manifest" id="mymanifest" /> -->
+    <link rel="manifest" href="staticmani.json" />
 </head>
 <body>
     <div class="step1">
@@ -44,7 +44,7 @@
         const stringManifest = JSON.stringify(manifest);
         const blob = new Blob([stringManifest], {type: 'application/json'});
         const manifestURL = URL.createObjectURL(blob);
-        document.querySelector('#mymanifest').setAttribute('href', manifestURL);
+        // document.querySelector('#mymanifest').setAttribute('href', manifestURL);
 
         document.querySelector(".step1").style.display="none"
         document.querySelector(".step2").style.display="unset"
