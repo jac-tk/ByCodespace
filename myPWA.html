@@ -35,7 +35,7 @@
         const stringManifest = JSON.stringify(manifest);
         const blob = new Blob([stringManifest], {type: 'application/json'});
         const manifestURL = URL.createObjectURL(blob);
-        document.querySelector('#mymanifest').setAttribute('href', manifestURL);
+        // document.querySelector('#mymanifest').setAttribute('href', manifestURL);
 
         document.querySelector(".step1").style.display="none"
         document.querySelector(".step2").style.display="unset"
