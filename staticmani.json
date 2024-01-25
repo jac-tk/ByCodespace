@@ -8,8 +8,15 @@
     "icons": [
         {
         "src": "tst.png",
-        "sizes": "100x100"
-        }],  
+        "sizes": "100x100",
+        "purpose": "any"
+        },
+        {
+            "src": "tst2.png",
+            "sizes": "200x200",
+            "purpose": "any"
+        }
+    ],  
     "screenshots": [
         {
         "src": "tst32.png",
