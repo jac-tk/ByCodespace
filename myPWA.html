@@ -11,7 +11,7 @@
 <script>
     if((params = window.location.search) && (init = (new URLSearchParams(params).get("init")))){
         sessionStorage.setItem("user",init)
-        window.location.href = window.location.href.replace("#/.*?$#","myPWA_home")
+        window.location.href = window.location.href.replace(/\/[^/]*?$/,"myPWA_home")
     }
 </script>
 <body>
@@ -27,7 +27,7 @@
 <script>
     function generateEnv(elem){
         if(!elem.value)return alert("未入力！");
-        const rootPath = window.location.href.replace("#/.*?$#","")
+        const rootPath = window.location.href.replace(/\/[^/]*?$/,"")
         const startUrl = window.location.href + "?init=" + elem.value,
                 manifest = {
                     "name": "myPWAapplication",
