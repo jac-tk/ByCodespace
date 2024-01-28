@@ -11,7 +11,7 @@
 <body>
     <script>
         if((params = window.location.search) && (init = (new URLSearchParams(params).get("init")))){
-            sessionStorage.setItem("user",init)
+            sessionStorage.setItem("init",init)
             window.location.href = window.location.href.replace(/(?<=\/)[^/]*?$/,"myPWA_home")
         }
     </script>
