@@ -27,15 +27,15 @@
 <script>
     function generateEnv(elem){
         if(!elem.value)return alert("未入力！");
-        const rootPath = window.location.href.replace(/(?<=\/)[^/]*?$/,""),
-                startUrl = window.location.href + "?init=" + elem.value
-        const manifest = {
+        const rootPath = window.location.href.replace(/(?<=\/)[^/]*?$/,"")
+                startUrl = window.location.href + "?init=" + elem.value,
+                manifest = {
                     "name": "myPWAapplication",
                     "short_name": "myPWA",
                     "theme_color": "blue",
                     "background_color": "gray",
                     "display": "standalone",
-                    "start_url": rootPath+"myPWA",
+                    "start_url": startUrl,
                     "icons": [
                         {
                         "src": rootPath+"tst.png",
