@@ -11,7 +11,7 @@
 <script>
     if((params = window.location.search) && (init = (new URLSearchParams(params).get("init")))){
         sessionStorage.setItem("user",init)
-        window.location.href = window.location.href.replace("#/.*?$#","myPWA_home.html")
+        window.location.href = window.location.href.replace("#/.*?$#","myPWA_home")
     }
 </script>
 <body>
@@ -27,6 +27,7 @@
 <script>
     function generateEnv(elem){
         if(!elem.value)return alert("未入力！");
+        const rootPath = window.location.href.replace("#/.*?$#","")
         const startUrl = window.location.href + "?init=" + elem.value,
                 manifest = {
                     "name": "myPWAapplication",
@@ -34,28 +35,28 @@
                     "theme_color": "blue",
                     "background_color": "gray",
                     "display": "standalone",
-                    "start_url": "myPWA",
+                    "start_url": rootPath+"myPWA",
                     "icons": [
                         {
-                        "src": "tst.png",
+                        "src": rootPath+"tst.png",
                         "sizes": "100x100",
                         "purpose": "any"
                         },
                         {
-                            "src": "tst2.png",
+                            "src": rootPath+"tst2.png",
                             "sizes": "200x200",
                             "purpose": "any"
                         }
                     ],  
                     "screenshots": [
                         {
-                        "src": "tst32.png",
+                        "src": rootPath+"tst32.png",
                         "sizes": "320x320",
                         "purpose": "any",
                         "form_factor": "wide"
                         },
                         {
-                            "src": "tst32.png",
+                            "src": rootPath+"tst32.png",
                             "sizes": "320x320",
                             "purpose": "any",
                             "form_factor": "narrow"
