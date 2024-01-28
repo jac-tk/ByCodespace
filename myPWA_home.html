@@ -15,6 +15,6 @@
     const userSS = sessionStorage.getItem("init")
     if(!userSS)
         window.location.href = window.location.href.replace("#/.*?$#","myPWA.html")
-    userDom.innerText = userSS
+    document.querySelector("#userDOM").innerText = userSS
 </script>
 </html>
