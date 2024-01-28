@@ -8,13 +8,13 @@
     <link rel="manifest" id="mymanifest" />
     <!-- <link rel="manifest" href="staticmani.json" /> -->
 </head>
-<script>
-    if((params = window.location.search) && (init = (new URLSearchParams(params).get("init")))){
-        sessionStorage.setItem("user",init)
-        window.location.href = window.location.href.replace(/(?<=\/)[^/]*?$/,"myPWA_home")
-    }
-</script>
 <body>
+    <script>
+        if((params = window.location.search) && (init = (new URLSearchParams(params).get("init")))){
+            sessionStorage.setItem("user",init)
+            window.location.href = window.location.href.replace(/(?<=\/)[^/]*?$/,"myPWA_home")
+        }
+    </script>
     <div class="step1">
         input name<input type="text">
         <button onclick="generateEnv(this.previousElementSibling)">OK</button>
